@@ -1,7 +1,7 @@
 var http = require('http');
 var parseString = require('xml2js').parseString;
 
-var countryIds = require(require('path').resolve('lib', 'countries.json'));
+var countryIds = require(require('path').resolve(__dirname, 'lib', 'countries.json'));
 
 module.exports = function(localization, count, callback) {
   var url = "http://www.google.com/trends/hottrends/atom/feed?pn=" + countryIds[localization.toLowerCase()];
