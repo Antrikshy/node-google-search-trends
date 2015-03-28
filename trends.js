@@ -4,8 +4,8 @@ var parseString = require('xml2js').parseString;
 var countryIds = require(require('path').resolve('lib', 'countries.json'));
 
 module.exports = function(localization, count, callback) {
-  var url = "http://www.google.com/trends/hottrends/atom/feed?pn=" + countryIds[localization];
-  
+  var url = "http://www.google.com/trends/hottrends/atom/feed?pn=" + countryIds[localization.toLowerCase()];
+
   if (count > 20)
     count = 20;
 
