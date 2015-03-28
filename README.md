@@ -1,7 +1,7 @@
 node-google-search-trends
 =========================
 
-Node module to grab Google's trending searches from the official Atom feed. It returns data more or less identical to [this page](http://www.google.com/trends/hottrends), using any localized version of [this feed](www.google.com/trends/hottrends/atom/feed?pn=p1), without all the clutter that comes with XML feeds.
+Node.js module to grab Google's trending searches from the official Atom feed. It returns data more or less identical to [this page](http://www.google.com/trends/hottrends), using any localized version of [this feed](www.google.com/trends/hottrends/atom/feed?pn=p1), without all the clutter that comes with XML feeds.
 
 Contact me [@Antrikshy](http://twitter.com/Antrikshy) with any questions, feedback or bugs.
 
@@ -20,7 +20,7 @@ The module comes with one exposed function. It takes three parameters - `localiz
         console.log(JSON.stringify(data, null, 2));  // Pretty prints JSON 'data'
     });
 
-Google only seems to store a maximum of 20 recent trends, so `count` is capped at 20.
+Google only seems to store a maximum of 20 recent trends, so `count` is capped at 20. Also, the serial order of search trends on the website may differ from returned data, because that's how Google's feed is.
 
 Here's an example of the `data` object:
 
