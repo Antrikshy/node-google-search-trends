@@ -2,10 +2,7 @@
   "name": "node-google-search-trends",
   "version": "1.0.0",
   "description": "JSON wrapper for data from Google Search Trends",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "trends.js",
   "author": "Antriksh Yadav <antrikshy@gmail.com> (http://antrikshy.com/)",
   "license": "MIT",
   "dependencies": {
