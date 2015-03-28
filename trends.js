@@ -6,6 +6,9 @@ var countryIds = require(require('path').resolve('lib', 'countries.json'));
 module.exports = function(localization, count, callback) {
   var url = "http://www.google.com/trends/hottrends/atom/feed?pn=" + countryIds[localization];
   
+  if (count > 20)
+    count = 20;
+
   xmlFeedToJson(url, function(err, data) {
     var allFeedItems = data.rss.channel['0'].item;
     var toReturn = {};

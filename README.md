@@ -20,7 +20,7 @@ The module comes with one exposed function. It takes three parameters - `localiz
         console.log(JSON.stringify(data, null, 2));  // Pretty prints JSON 'data'
     });
 
-Google seems to return a maximum of 20 recent trends, so `count` cannot be greater than 20.
+Google only seems to store a maximum of 20 recent trends, so `count` is capped at 20.
 
 Here's an example of the `data` object:
 
@@ -59,6 +59,4 @@ Potentially useful items are `title` (the actual trending keyword), `link` (to t
 Contribute
 ----------
 
-It's a pretty simple module to contribute to. Just clone the repo and make a script inside the folder to test responses. Any fixes, cleanup etc. are always appreciated.
-
-If you know of a way to request more than 20 items from Google, please add the feature.
+It's a pretty simple module to contribute to, if you know Node.js basics. Just clone the repo and make a script inside the folder to test responses using `require('./trends.js')`. Any fixes, cleanup or new features are always appreciated.
