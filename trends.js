@@ -9,7 +9,7 @@ module.exports = function(localization, count, callback) {
   if (count > 20)
     count = 20;
 
-  xmlFeedToJson(url, function(err, data) {
+  xmlToJson(url, function(err, data) {
     var allFeedItems = data.rss.channel['0'].item;
     var toReturn = {};
 
@@ -23,7 +23,7 @@ module.exports = function(localization, count, callback) {
   });
 }
 
-function xmlFeedToJson(url, callback) {
+function xmlToJson(url, callback) {
   var req = http.get(url, function(res) {
     var xml = '';
     
