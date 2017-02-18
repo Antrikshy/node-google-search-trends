@@ -1,7 +1,7 @@
 node-google-search-trends
 =========================
 
-Node.js module to grab Google's trending searches from the official Atom feed. It returns data more or less identical to [this page](http://www.google.com/trends/hottrends), using any localized version of [this feed](www.google.com/trends/hottrends/atom/feed?pn=p1), without all the clutter that comes with XML feeds.
+Node.js module to grab Google's trending searches from the official Atom feed. It returns data more or less identical to [this page](http://www.google.com/trends/hottrends), using any localized version of [this feed](http://trends.google.com/trends/hottrends/atom/feed?pn=p1), without all the clutter that comes with XML feeds.
 
 This module was written to pull interesting discussion topics into [Quibbler](http://quibbler.co). It is intended for use in similar use cases, like in an application that can benefit from having a list of trending topics (that only needs to change occasionally). But feel free to try out innovative things with it.
 
