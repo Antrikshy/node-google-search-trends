@@ -1,6 +1,6 @@
 {
   "name": "node-google-search-trends",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "API to retrieve JSON data from Google Search Trends with localization",
   "main": "trends.js",
   "author": "Antriksh Yadav <antrikshy@gmail.com> (http://antrikshy.com/)",
